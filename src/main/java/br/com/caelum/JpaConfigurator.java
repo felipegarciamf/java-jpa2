@@ -19,14 +19,14 @@ public class JpaConfigurator {
 
 	@Bean
 	public DataSource getDataSource() {
-	    DriverManagerDataSource dataSource = new DriverManagerDataSource();
+	     DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
-	    dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-	    dataSource.setUrl("jdbc:mysql://localhost/projeto_jpa");
-	    dataSource.setUsername("root");
-	    dataSource.setPassword("");
+	     dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+	     dataSource.setUrl("jdbc:mysql://localhost/projeto_jpa");
+	     dataSource.setUsername("root");
+	     dataSource.setPassword("");
 
-	    return dataSource;
+	     return dataSource;
 	}
 
 	@Bean
